@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <title>Hangman</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="styles/hangman.css" rel="stylesheet" type="text/css">
+        <script src="scripts/modernizr.js"></script>
+        <script>
+            Modernizr.load({
+                load: ['scripts/jquery-1.11.1.min.js', 'scripts/hangman.js'],
+                complete: function () {
+                    init();
+                }
+            });
+        </script>
+    </head>
+
+    <body>
+        <h1>Alistair's Hangman Game</h1>
+        <div id="divselect">Select word</div>
+        <p id="word"></p>
+        <div id="divkeyspic">
+            <div id="divwrapper">
+                <div id="divkeys"></div>
+            </div>
+            <canvas id="pic" width="200" height="200"></canvas>
+        </div>
+    </body>
+</html>
